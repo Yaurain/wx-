@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="news-item-container">
+    <block wx:for="{{list}}" wx:for-index="id">
+    <!-- text放新闻的日期 -->
+      <text wx:if="{{item.header}}" class="sub-title">{{item.header}}</text>
+      <!-- navigator导航组件 放置需要跳转到的链接 -->
+      <navigator wx:else url="../detail/detail?id={{item.id}}">
+        <view class="news-item" >
+          <view class="news-item-left">
+            <text class="news-item-title">{{item.title}}</text>
+          </view>
+          <view class="news-item-right">
+            <image src="{{item.images[0]}}" class="news-image"/>
+          </view>
+        </view>
+      </navigator>
+    </block>
+   <!-- ，loading设置点击按钮时，在加载过程重按钮会出现加载的小圆圈 
+   绑定loadMore事件-->
+    <button class="load-btn"  loading="{{loading}}" bindtap="loadMore">还有更多哦！</button>
+  </view>
+  
+</view>

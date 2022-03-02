@@ -1,0 +1,8 @@
+<!-- 全屏背景 -->
+<image class="home_bg" src="../../images/bg.jpg"></image>
+<!-- 介绍文字 -->
+<!-- 跳转列表 -->
+<view class="nav_list">
+<navigator url="/pages/picture++/picture++" open-type="navigate" class="list_item">还能这样？</navigator>
+<navigator url="/pages/news/news" class="list_item">涨知识了！</navigator>
+</view>

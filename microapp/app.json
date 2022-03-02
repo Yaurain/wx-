@@ -1,0 +1,19 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/detail/detail",
+        "pages/news/news",
+        "pages/picture++/picture++",
+        "pages/imageeditor/imageeditor",
+        "pages/combine/combine"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#00BFFF",
+        "navigationBarTitleText": "实用小程序",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
